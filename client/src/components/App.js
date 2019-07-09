@@ -2,16 +2,10 @@ import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import Header from "./Header";
 import Landing from "./Landing";
+import Dashboard from "./Dashboard";
+import SurveyNew from "./surveys/SurveyNew";
 import { connect } from "react-redux";
 import * as actions from "../actions";
-
-const Dashboard = () => {
-  return <h2>dashboard</h2>;
-};
-
-const SurveyNew = () => {
-  return <h2>surveynew</h2>;
-};
 
 class App extends React.Component {
   componentDidMount() {
@@ -20,7 +14,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div>
         <BrowserRouter>
           <div>
             <Header />
